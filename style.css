@@ -1,0 +1,89 @@
+body {
+    background: url(https://img.freepik.com/free-vector/watercolor-international-tea-day-background_23-2149361201.jpg?w=2000&t=st=1666907511~exp=1666908111~hmac=7e72ed263c02dc2121fb372ffe13ffd5d91106f637b83c56b89558be0b89343a) center/cover no-repeat;
+    font-family: 'Exo', sans-serif;
+    margin: 0;
+    min-height: 100vh;
+}
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-image: linear-gradient(rgba(233, 200, 200, 0.1), rgba(0, 0, 0, 0.3));
+}
+.input-container {
+    display: flex;
+}
+h1, #timeDisplay{
+    background-color: rgba(165, 201, 202, 0.8);
+    padding: 10px;
+    border-radius: 10px;
+    border: 5px solid #fff;
+    color: #fff;
+    text-shadow: 2px 2px 2px black;
+    letter-spacing: 3px;
+}
+#timeDisplay {
+    font-weight: 600;
+    font-size: 60px;
+}
+h1 {
+    font-size: 50px;
+}
+#minutes, #seconds {
+    margin: 10px;
+    padding: 10px;
+    font-size: 22px;
+    font-family: 'Exo', sans-serif;
+}
+#btn, #btnStop {
+    margin-top: 10px;
+    padding: 20px;
+    border-radius: 20px;
+    border: none;
+    font-size: 35px;
+    background-color: rgba(255, 248, 156, 0.7);
+    font-family: 'Exo', sans-serif;
+    border: 5px solid #fff;
+    color: rgba(165, 201, 202, 1);
+    text-shadow: 2px 2px 2px black;
+    font-weight: bolder;
+}
+#btn:hover, #btnStop:hover {
+    background-color: rgba(255, 248, 156, 1);
+}
+#btnStop {
+    display: none;
+}
+.image {
+    width: 120px;
+    margin-bottom: 40px;
+}
+@media all and (max-width: 500px){
+    h1 {
+        font-size: 40px;
+        text-align: center;
+        padding: 5px;
+    }
+    .input-container {
+        display: flex;
+        flex-direction: column;
+    }
+    #minutes, #seconds {
+        font-size: 20px;
+    }
+    #timeDisplay {
+        font-size: 50px;
+    }
+    .image {
+        width: 100px;
+    }
+    #btn, #btnStop {
+        margin-top: 10px;
+        padding: 15px;
+        font-size: 25px;
+        text-shadow: 2px 2px 2px black;
+        font-weight: bolder;
+    }
+}
